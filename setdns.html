@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>域名解析 | BestH5 社交传播开放平台</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="公众号域名解析通用参数
+
+&amp;lt;authorizer_appid&amp;gt;: 列表中已经存在的公众号
+&amp;lt;domain&amp;gt;: besth5.com
+&amp;lt;access_token&amp;gt;: access_token
+
+读取解析记录GET /wxapps/:authorizer_appid/dns/:domain?access_token
+response1234567891011&amp;#12">
+<meta property="og:type" content="article">
+<meta property="og:title" content="域名解析">
+<meta property="og:url" content="http://doc.besth5.com/setdns.html">
+<meta property="og:site_name" content="BestH5 社交传播开放平台">
+<meta property="og:description" content="公众号域名解析通用参数
+
+&amp;lt;authorizer_appid&amp;gt;: 列表中已经存在的公众号
+&amp;lt;domain&amp;gt;: besth5.com
+&amp;lt;access_token&amp;gt;: access_token
+
+读取解析记录GET /wxapps/:authorizer_appid/dns/:domain?access_token
+response1234567891011&amp;#12">
+<meta property="og:updated_time" content="2016-03-02T12:52:30.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="域名解析">
+<meta name="twitter:description" content="公众号域名解析通用参数
+
+&amp;lt;authorizer_appid&amp;gt;: 列表中已经存在的公众号
+&amp;lt;domain&amp;gt;: besth5.com
+&amp;lt;access_token&amp;gt;: access_token
+
+读取解析记录GET /wxapps/:authorizer_appid/dns/:domain?access_token
+response1234567891011&amp;#12">
+  
+    <link rel="alternate" href="/atom.xml" title="BestH5 社交传播开放平台" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">BestH5 社交传播开放平台</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">量化社交传播 提升营销效果</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">首页</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="Flux RSS"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Rechercher"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://doc.besth5.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-setdns" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+<!--
+    <a href="/setdns.html" class="article-date">
+  <time datetime="2016-03-02T08:06:38.000Z" itemprop="datePublished">2016-03-02</time>
+</a>
+    
+-->
+    <p class="article-date">
+      注：此文档处于测试阶段，如遇问题请向微信公众号 WeiRadar 反馈。
+    </p>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      域名解析
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="公众号域名解析"><a href="#公众号域名解析" class="headerlink" title="公众号域名解析"></a>公众号域名解析</h1><p>通用参数</p>
+<ul>
+<li><code>&lt;authorizer_appid&gt;</code>: 列表中已经存在的公众号</li>
+<li><code>&lt;domain&gt;</code>: <code>besth5.com</code></li>
+<li><code>&lt;access_token&gt;</code>: access_token</li>
+</ul>
+<h2 id="读取解析记录"><a href="#读取解析记录" class="headerlink" title="读取解析记录"></a>读取解析记录</h2><p><code>GET /wxapps/:authorizer_appid/dns/:domain?access_token</code></p>
+<h4 id="response"><a href="#response" class="headerlink" title="response"></a>response</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="string">"records"</span>: [&#123;</span><br><span class="line">    <span class="string">"name"</span>: <span class="string">"wx6d745422f1fb6108.page"</span>,</span><br><span class="line">    <span class="string">"line"</span>: <span class="string">"国外"</span>,</span><br><span class="line">    <span class="string">"type"</span>: <span class="string">"A"</span>,</span><br><span class="line">    <span class="string">"value"</span>: <span class="string">"111.200.11.22"</span>,</span><br><span class="line">    <span class="string">"weight"</span>: <span class="literal">null</span>,</span><br><span class="line">    <span class="string">"ttl"</span>: <span class="string">"600"</span>,</span><br><span class="line">    <span class="string">"updated_on"</span>: <span class="string">"2016-02-25 18:58:04"</span></span><br><span class="line">  &#125;, ...]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<table>
+<thead>
+<tr>
+<th>field</th>
+<th>type</th>
+<th>remark</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>name</td>
+<td>string</td>
+<td>主机 就是固定值 {appid}.page</td>
+</tr>
+<tr>
+<td>line</td>
+<td>string</td>
+<td>线路 <strong></strong> 之一</td>
+</tr>
+<tr>
+<td>type</td>
+<td>string</td>
+<td>解析方式 <strong></strong> 之一</td>
+</tr>
+<tr>
+<td>value</td>
+<td>string</td>
+<td>type==A 时写IP; type==CNAME 时写域名</td>
+</tr>
+<tr>
+<td>ttl</td>
+<td>string</td>
+<td>过期时间</td>
+</tr>
+<tr>
+<td>updated_on</td>
+<td>string</td>
+<td>修改时间</td>
+</tr>
+</tbody>
+</table>
+<h2 id="覆盖写入"><a href="#覆盖写入" class="headerlink" title="覆盖写入"></a>覆盖写入</h2><p><code>POST /wxapps/:authorizer_appid/dns/:domain?access_token</code></p>
+<ul>
+<li>可以对不同的线路进行不同的解析, 从而实现CDN; 没有CDN的情况使用<code>默认</code>线路</li>
+<li>修改是覆盖性质的, 以line值作key, 如果原始记录是[联通,电信], request填写[默认,电信], 会修改[电信], 加入[默认], 删除[联通]</li>
+<li>可以通过 <code>{records:[]}</code> 删除所有解析</li>
+</ul>
+<h4 id="request"><a href="#request" class="headerlink" title="request"></a>request</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="string">"records"</span>: [&#123;</span><br><span class="line">     <span class="string">"line"</span>: <span class="string">"国内"</span>,</span><br><span class="line">     <span class="string">"type"</span>: <span class="string">"A"</span>,</span><br><span class="line">     <span class="string">"value"</span>: <span class="string">"111.200.111.112"</span></span><br><span class="line">  &#125;, &#123;</span><br><span class="line">     <span class="string">"line"</span>: <span class="string">"国外"</span>,</span><br><span class="line">     <span class="string">"type"</span>: <span class="string">"A"</span>,</span><br><span class="line">     <span class="string">"value"</span>: <span class="string">"111.200.111.112"</span></span><br><span class="line">  &#125;]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<table>
+<thead>
+<tr>
+<th>field</th>
+<th>type</th>
+<th>required</th>
+<th>remark</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>line</td>
+<td>string</td>
+<td>Y</td>
+<td>线路 <strong></strong> 之一</td>
+</tr>
+<tr>
+<td>type</td>
+<td>string</td>
+<td>Y</td>
+<td>解析方式 <strong></strong> 之一</td>
+</tr>
+<tr>
+<td>value</td>
+<td>string</td>
+<td>Y</td>
+<td>type==A 时写IP; type==CNAME 时写域名</td>
+</tr>
+</tbody>
+</table>
+<h4 id="response-1"><a href="#response-1" class="headerlink" title="response"></a>response</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  error: <span class="literal">false</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+    <footer class="article-footer">
+  <!--
+      <a data-url="http://doc.besth5.com/setdns.html" data-id="cilazd015000f2os6j552a1pq" class="article-share-link">Partager</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/viewsite.html" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Récent</strong>
+      <div class="article-nav-title">
+        
+          访问场景
+        
+      </div>
+    </a>
+  
+  
+    <a href="/check.html" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Ancien</strong>
+      <div class="article-nav-title">安全验证</div>
+    </a>
+  
+</nav>
+
+  
+  -->
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+      <div class="widget-wrap">
+    <div class="widget">
+      <ul>
+        <li><a href="/start.html">开始接入</a></li>
+        <li>资源列表
+          <ul>
+            <li>场景类
+              <ul>
+                <li><a href="/creatsite.html">创建监测场景</a></li>
+                <li><a href="/getsites.html">获取场景列表</a></li>
+                <li><a href="/editsite.html">编辑场景信息</a></li>
+                <li><a href="/viewsite.html">访问监测场景</a></li>
+              </ul>
+            </li>
+            <li>用户类
+              <ul>
+                <li><a href="/getusers.html">获取用户列表</a></li>
+                <li><a href="/getuserinfo.html">获取用户信息</a></li>
+                <li><a href="/getusersbefore.html">获取用户上游</a></li>
+                <li><a href="/getusersafter.html">获取用户下游</a></li>
+              </ul>
+            </li>
+            <li>会话类
+              <ul>
+                <li><a href="/getnewsessions.html">获取最新会话列表</a></li>
+                <li><a href="/getsessioninfo.html">获取会话详情</a></li>
+              </ul>
+            </li>
+            <li>统计类
+              <ul>
+                <li><a href="/getsitestat.html">获取场景统计信息</a></li>
+                <li><a href="/getsitetrends.html">获取场景访问趋势</a></li>
+                <li><a href="/getsitetop.html">获取场景热门统计</a></li>
+                <li><a href="/getsitetopusers.html">获取场景关键用户</a></li>
+              </ul>
+            </li>
+          </ul>
+        </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <!--
+<footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2016 AdMaster<br>
+    </div>
+  </div>
+</footer>
+-->
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">首页</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+  </div>
+</body>
+</html>
