@@ -53,7 +53,7 @@ HTTP 请求方式POST
 client_id
 是
 st">
-<meta property="og:updated_time" content="2016-03-03T03:19:02.000Z">
+<meta property="og:updated_time" content="2016-03-03T03:37:32.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="获取 access_token">
 <meta name="twitter:description" content="数据接口需要携带 access_token 请求才能成功返回数据，因此需要获取可用 access_token。
@@ -78,8 +78,6 @@ HTTP 请求方式POST
 client_id
 是
 st">
-  
-    <link rel="alternate" href="/atom.xml" title="BestH5 社交传播开放平台" type="application/atom+xml">
   
   
     <link rel="icon" href="/favicon.png">
@@ -117,9 +115,9 @@ st">
       </nav>
       <nav id="sub-nav">
         
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
-        
-        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+        <!--
+        <a id="nav-search-btn" class="nav-icon" title="Søk"></a>
+        -->
       </nav>
       <div id="search-form-wrap">
         <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://doc.besth5.com"></form>
@@ -127,6 +125,7 @@ st">
     </div>
   </div>
 </header>
+
       <div class="outer">
         <section id="main"><article id="post-gettoken" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
@@ -203,7 +202,7 @@ st">
 <h3 id="调用样例"><a href="#调用样例" class="headerlink" title="调用样例"></a>调用样例</h3><p>POST <a href="http://open.admaster.com.cn/api/oauth/access_token" target="_blank" rel="external">http://open.admaster.com.cn/api/oauth/access_token</a></p>
 <p>Body(x-www-form-urlencoded)</p>
 <figure class="highlight avrasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="symbol">client_id:</span> <span class="number">31176</span>d61b449a49d3d76</span><br><span class="line"><span class="symbol">grant_type:</span> password</span><br><span class="line"><span class="symbol">email:</span> youremail </span><br><span class="line"><span class="symbol">password:</span> yourpassword</span><br></pre></td></tr></table></figure>
-<h4 id="curl-请求样例"><a href="#curl-请求样例" class="headerlink" title="curl 请求样例"></a>curl 请求样例</h4><p>curl -X POST -H “Cache-Control: no-cache” -H “Content-Type: application/x-www-form-urlencoded” -d ‘client_id=31176d61b449a49d3d76&amp;grant_type=password&amp;email=youremail&amp;password=yourpassword’ “<a href="http://open.admaster.com.cn/api/oauth/access_token" target="_blank" rel="external">http://open.admaster.com.cn/api/oauth/access_token</a>“</p>
+<h4 id="curl-请求样例"><a href="#curl-请求样例" class="headerlink" title="curl 请求样例"></a>curl 请求样例</h4><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl -X POST -H "<span class="keyword">Cache</span>-Control: <span class="keyword">no</span>-<span class="keyword">cache</span><span class="string">" -H "</span><span class="keyword">Content</span>-<span class="keyword">Type</span>: application/x-www-<span class="keyword">form</span>-urlencoded<span class="string">" -d 'client_id=31176d61b449a49d3d76&amp;grant_type=password&amp;email=youremail&amp;password=yourpassword' "</span><span class="keyword">http</span>://<span class="keyword">open</span>.admaster.com.cn/api/oauth/access_token<span class="string">"</span></span><br></pre></td></tr></table></figure>
 <p>请将 youremail 与 yourpassword 修改为自己的邮箱和密码。</p>
 <h3 id="返回结果"><a href="#返回结果" class="headerlink" title="返回结果"></a>返回结果</h3><figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="attr">"access_token"</span>: <span class="string">"7a68b4d65ddd6a6191ef0cbf9cadb06528d92d67"</span>,</span><br><span class="line">  <span class="attr">"expires_in"</span>: <span class="string">"1800000"</span>,</span><br><span class="line">  <span class="attr">"refresh_token"</span>: <span class="string">"23a89c9944afc0525a25d15d180c6bce03efa331"</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <h3 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h3><p>access_token 的过期时间为 24 小时，建议定期更新并缓存于本地。</p>
@@ -212,7 +211,7 @@ st">
     </div>
     <footer class="article-footer">
   <!--
-      <a data-url="http://doc.besth5.com/gettoken.html" data-id="cilbpe7d9000a6kcwvcvs4eo9" class="article-share-link">Share</a>
+      <a data-url="http://doc.besth5.com/gettoken.html" data-id="cilbpzy8k000bhqcwip9jj1v4" class="article-share-link">Share</a>
       
       
     </footer>
